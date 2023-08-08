@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter counter</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="square">
+        <h2>Type a sentence</h2>
+        <div><textarea name="text" id="text" cols="30" rows="10"></textarea></div>
+        <div><button  type="submit"class="btn" onclick="convert()">calculate letter</button><div id="result"></div>
+        </div>
+        <script src="script.js">
+           
+            function convert(){
+                let countval=(document.getElementById("text").value.length)
+            let result=document.getElementById("result")
+            result.innerHTML=countval+"letters"
+            
+            }
+        </script>
+
+    </div>
+</body>
+</html>
