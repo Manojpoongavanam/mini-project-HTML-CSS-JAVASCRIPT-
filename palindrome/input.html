@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>farenheat</title>
+</head>
+<body>
+     <div id="wrapper">
+        <h2>palindrome checker</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="type here"></div>
+            <div>
+                <button type="submit" onclick="palindrome()">check</button>
+            </div>
+            <div id="result"> </div>
+     </div>
+     <script>
+        
+       
+        function palindrome(){
+        
+           
+
+
+            let word = document.getElementById("input").value;
+            let newword=word.split("").reverse().join("");
+            let result=document.getElementById("result");
+            if(word===newword)
+           result.innerText=`result is palindrome`;
+            else
+           result.innerText=`result is not palindrome`;
+            
+     }
+           
+        
+            
+        
+        
+     </script>
+</body>
+</html>
